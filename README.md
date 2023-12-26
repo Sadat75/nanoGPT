@@ -1,5 +1,26 @@
-# This code was forked from the original repository of Andrej Karpathy.
-# I have added python files and the data to train on custom Bengali story
+# Training nanoGPT on Bengali Stories
+
+In addition to the capabilities of training medium-sized GPTs as provided in the original `nanoGPT`, this fork includes support for training a GPT on Bengali stories. The process follows closely with the structure established by Andrej Karpathy, with the addition of specialized preprocessing for Bengali characters.
+
+## Quick Start for Bengali Story
+
+To train a character-level GPT on Bengali stories, we first prepare the data with a script tailored for Bengali text:
+
+$ python data/bangla_story/prepare.py
+
+This script will process the provided Bengali story text file `IL1.txt` and create `train.bin` and `val.bin` files in the data directory. With the data prepared, you can train your GPT with the Bengali story configuration:
+
+$ python train.py config/train_bangla_story_char.py
+
+
+For detailed instructions on training parameters and environment setup, see the configuration file `config/train_bangla_story_char.py`.
+
+## Acknowledgements
+
+This project builds upon the `nanoGPT` repository originally created by [Andrej Karpathy](https://github.com/karpathy/nanoGPT). I would like to express my gratitude to Andrej for developing such a straightforward and efficient codebase, which I have been able to extend for training GPTs on Bengali story data. His work has been instrumental in enabling this extension and the broader application of GPT models.
+
+All original contributions by Andrej Karpathy remain his intellectual property, and any modifications for Bengali story training have been made in the spirit of open collaboration and with respect for his significant contributions to the field of artificial intelligence.
+
 
 # nanoGPT
 
