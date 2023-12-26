@@ -6,12 +6,14 @@ In addition to the capabilities of training medium-sized GPTs as provided in the
 
 To train a character-level GPT on Bengali stories, we first prepare the data with a script tailored for Bengali text:
 
+```
 $ python data/bangla_story/prepare.py
-
+```
 This script will process the provided Bengali story text file `IL1.txt` and create `train.bin` and `val.bin` files in the data directory. With the data prepared, you can train your GPT with the Bengali story configuration:
 
+```
 $ python train.py config/train_bangla_story_char.py
-
+```
 
 For detailed instructions on training parameters and environment setup, see the configuration file `config/train_bangla_story_char.py`.
 
