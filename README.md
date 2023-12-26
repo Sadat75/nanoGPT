@@ -1,3 +1,5 @@
+# This code was forked from the original repository of Andrej Karpathy.
+# I have added python files and the data to train on custom Bengali story
 
 # nanoGPT
 
